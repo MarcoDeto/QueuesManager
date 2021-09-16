@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cursor-loader {
+  cursor: wait !important;
+}
+
+.mat-checkbox-layout {
+  margin: 0;
+}
+
+.sweet-popup {
+  width: 250px !important;
+  padding: 10px !important;
+}
+
+.sweet-popup2 {
+  width: 300px !important;
+  padding: 10px !important;
+}
+
+.sweet-header {
+  padding: 0 !important;
+}
+
+.sweet-title {
+  margin-bottom: 5px !important;
+}
+
+.sweet-actions {
+  margin: 0 !important;
+}
+
+.refreshSelect {
+  padding: 0;
+  float: right;
+}
+
+@media(max-width: 415px) {
+  .refreshSelect {
+    width: 100%;
+  }
+}
+
+@media(max-width: 725px) {
+  .refreshSelect {
+    width: 100%;
+  }
+}
+
+mat-dialog-container{
+  padding: 0 !important;
+}

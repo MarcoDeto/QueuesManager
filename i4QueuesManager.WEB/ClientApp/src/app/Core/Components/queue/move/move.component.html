@@ -1,0 +1,45 @@
+<form novalidate [formGroup]="moveForm" (ngSubmit)="onSubmit()">
+
+  <div class="mat-dialog-title">
+    <h1 class="row">
+      <div class="col-2"></div>
+      <div class="col-8">Move messages</div>
+      <div class="col-2 close-dialog"><i class="fas fa-times-square" (click)="closeDialog()"></i></div></h1>
+  </div>
+
+  <mat-dialog-content class="mat-typography">
+    <div class="width">
+      <div class="row">
+        <div class="info-base container col-sm">
+          <div class="box" style="padding-bottom: 15px;">
+            <div class="col-sm">
+              <div class="row col-12">
+                <div class="card-label-title col-12 col-sm-6">VIRTUAL HOST*</div>
+                <mat-form-field appearance="outline" class="col-12 col-sm-6">
+                  <mat-select formControlName="vhost" placeholder="Select virtual host">
+                    <mat-option *ngFor="let vhost of vhosts" [value]="vhost.name" (click)="getQueues()">{{vhost.name}}</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="moveForm.controls['vhost'].hasError('required')">Virtual Host è <strong>obbligatorio</strong>.</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="row col-12">
+                <div class="card-label-title col-12 col-sm-6">DESTINATION QUEUE*</div>
+                <mat-form-field appearance="outline" class="col-12 col-sm-6" (click)="getQueues()">
+                  <mat-select formControlName="destQueue" placeholder="Select queue">
+                    <mat-option *ngFor="let queue of queues" [value]="queue.name" (click)="setVhost(queue.vhost)">{{queue.name}}</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="moveForm.controls['destQueue'].hasError('required')">Queue è <strong>obbligatorio</strong>.</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button color="secondary" type="reset" (click)="closeDialog()">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Move</button>
+  </mat-dialog-actions>
+  </form>

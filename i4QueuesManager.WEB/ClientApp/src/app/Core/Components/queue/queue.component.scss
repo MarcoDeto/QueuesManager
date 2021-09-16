@@ -1,0 +1,51 @@
+.title {
+  font-size: 28px;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.form-select {
+  text-align-last: center;
+  width: 25%;
+  margin: 0 !important;
+  float: right;
+}
+
+.tag{
+  font-size: 12px;
+  //padding: 0 !important;
+  //margin: 0 !important;
+}
+
+.button-click {
+  vertical-align: text-bottom;
+}
+
+table {
+  width: 100%;
+}
+
+tr.mat-header-row {
+  height: 56px;
+  background: #F60;
+}
+
+th.mat-header-cell {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.mat-column-select {
+  width: 10%;
+  padding: 0 !important;
+  text-align: center;
+}
+
+.mat-column-size {
+  width: 20%;
+}
+
+.mat-column-body {
+  width: 70%;
+}

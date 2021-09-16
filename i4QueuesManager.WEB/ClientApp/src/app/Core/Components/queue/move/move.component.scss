@@ -1,0 +1,302 @@
+:host ::ng-deep .mat-form-field-wrapper {
+  padding-top: 1.34375em;
+  margin: auto 0 !important;
+  width: 100%;
+}
+
+:host ::ng-deep .mat-form-field-subscript-wrapper {
+  font-size: 80% !important;
+}
+
+:host ::ng-deep .mat-form-field-infix {
+  border-top: .25em solid transparent !important;
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.info-base {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #B3B7BF;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 20px;
+  width: 65%;
+  padding: 0;
+}
+
+.box {
+  width: 100%;
+}
+
+.box-title {
+  margin-top: 15px !important;
+  align-self: center;
+}
+
+h3.titolo {
+  letter-spacing: .07272727em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: .6875rem;
+}
+
+.titolo {
+  font-weight: 500;
+  line-height: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  //flex-basis: 156px;
+  align-items: center;
+  display: flex;
+  margin-left: 0;
+}
+
+.row {
+  margin: 0 !important;
+  //align-items: center;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+:host ::ng-deep .mat-input-element:disabled {
+  color: black;
+}
+
+/* Border */
+:host ::ng-deep .mat-form-field-outline {
+  color: #B3B7BF;
+}
+
+/*:host ::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+  color: #B3B7BF;
+}*/
+
+:host ::ng-deep .mat-form-field-suffix {
+  top: 6px !important;
+}
+
+:host ::ng-deep .password.mat-form-field-suffix {
+  top: .4em !important;
+}
+
+@media(max-width: 415px) {
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding-top: 0.5em;
+  }
+}
+
+@media(max-width: 768px) {
+  .row {
+    padding: 0;
+  }
+
+  .titolo {
+    width: 100%;
+  }
+}
+
+form {
+  margin: 0;
+  min-width: 150px;
+  width: 100%;
+  padding: 0;
+}
+
+.card-label-title, .card-label-value {
+  align-self: center;
+}
+
+.info {
+  padding: 5px 0 !important;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 24px;
+  padding-top: 6px;
+}
+
+.mat-typography {
+  max-height: 65vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: auto;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.mat-dialog-title {
+  margin: 0;
+  display: block;
+  font-size: 24px;
+  padding: 10px 20px;
+  background: #343a40;
+}
+
+.close-dialog {
+  text-align: end;
+  padding: 0;
+}
+
+.fa-times-square {
+  cursor: pointer;
+  align-self: center;
+  font-size: 30px;
+}
+
+.mat-dialog-actions {
+  margin: 0px 0px;
+  padding: 0 10px;
+  background: #343a40;
+  justify-content: flex-end;
+}
+
+.btn-disabled {
+  color: #B3B7BF !important;
+  background: #3f51b5 !important;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+
+.addEntity {
+  float: right;
+  height: 58px !important;
+  width: 20% !important;
+  border: 0 !important;
+  outline: none !important;
+  background: transparent;
+  margin: auto 0;
+}
+
+.delEntity {
+  float: right;
+  height: 58px !important;
+  width: 10% !important;
+  border: 0 !important;
+  outline: none !important;
+  background: transparent;
+  margin: auto 0;
+}
+
+.primary-icon {
+  color: #3f51b5;
+}
+
+.clear-icon {
+  color: #dc3545;
+}
+
+@media(min-width: 800px) {
+  .full-width {
+    width: 50%;
+  }
+}
+:host ::ng-deep .mat-tab-label {
+  padding: 0 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-column-paramName {
+  width: 30%;
+}
+
+.mat-column-paramDefaultValue {
+  width: 20%;
+}
+
+.mat-column-paramValue {
+  width: 30%;
+}
+
+.mat-column-actions {
+  width: 20%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+th.mat-header-cell {
+  padding-left: 24px;
+}
+
+td.mat-cell {
+  padding-left: 24px;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: rgba(176, 196, 222, 0.5);
+  cursor: pointer;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+    background: rgba(176, 196, 222, 0.8);
+}
+
+.btn-add {
+  background: rgba(255,255,255, 0.6);
+}
+
+.btn-add:active {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.btn-add:hover {
+  color: black !important;
+  background-color: transparent !important;
+  border: none !important;
+  transform: scale(1.5) !important;
+}
+
+.center {
+  text-align: center !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0,0,0,.12);
+}
+
+.mat-hint {
+  color: #3f51b5;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.mat-hint:hover {
+  text-decoration-line: underline;
+}
